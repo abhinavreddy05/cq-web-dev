@@ -1,0 +1,121 @@
+::selection{
+    color: white;
+    background-color: hsla(255, 27%, 26%, 1);
+}
+
+
+body {
+    padding-top: 10px;
+    scroll-behavior: smooth;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: hsla(255, 27%, 26%, 1);
+    background: linear-gradient(315deg, hsla(255, 27%, 26%, 1) 0%, hsla(254, 41%, 12%, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly   ;
+    gap: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+    padding: 5px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 40px;
+    color: white;
+    margin: 10px 0px;
+    padding-bottom: 30px;
+}
+
+h3{
+    font-size: 40px;
+    color: #18122B;
+    margin: 5px;
+}
+
+.card p{
+    color: black;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.card{
+    background-color: rgb(250, 250, 250);
+    max-width: 400px;
+    min-height: 500px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px #7a7a7a73;
+    text-align: left;
+}
+
+.card img{
+    width: 100% ;
+    min-height: 300px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px #7a7a7a73;
+}
+
+.card:hover img{
+    transform: translateY(-10px);
+    transition-duration: 100ms;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+footer .cq{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .cq a img{
+    height: 100px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.socials ul a img{
+    height: 30px;
+    width: 30px;
+}
+
+.socials ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px;
+}
+
+@media (max-width: 500px){
+    .card img{
+        width: 100%;
+        min-height: 200px;
+    }
+    .card{
+        margin: 10px;
+    }
+}
